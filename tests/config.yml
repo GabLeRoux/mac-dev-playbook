@@ -22,7 +22,6 @@ homebrew_installed_packages:
   - boost
   - cairo
   - certbot
-  - chromedriver
   - clang-format
   - cmake
   - composer
@@ -163,9 +162,6 @@ homebrew_installed_packages:
   - pcre
   - perl
   - phantomjs
-  - php
-  - php70
-  - php70-mcrypt
   - php@7.0
   - phpunit
   - pidgin
