@@ -2,5 +2,5 @@
 .DS_Store
 *.retry
 roles*
-config.yml
-ansible.log
+/config.yml
+/ansible.log
