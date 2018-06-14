@@ -37,6 +37,8 @@ script:
   - "travis_wait 30 ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml"
   # Test the playbook's idempotence.
   - idempotence=$(mktemp)
+  - ls -la .
+  - pwd
   - "ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml | tee -a ${idempotence}"
   - >
     tail ${idempotence}

@@ -3,52 +3,12 @@ downloads: ~/.ansible-downloads/
 
 configure_sudoers: yes
 
-homebrew_installed_packages:
-  - autoconf
-  - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
-  - git
-  - go
-  - gpg
-  - hub
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
-  - nmap
-  - node
-  - nvm
-  - php
-  - ssh-copy-id
-  - cowsay
-  - readline
-  - openssl
-  - pv
-  - wget
-  - wrk
+homebrew_installed_packages: []
 
 homebrew_taps: []
 
 homebrew_cask_appdir: /Applications
-homebrew_cask_apps:
-  - chromedriver
-  - docker
-  - dropbox
-  - firefox
-  - google-chrome
-  - handbrake
-  - licecap
-  - limechat
-  - macvim
-  - sequel-pro
-  - skitch
-  - slack
-  - sublime-text
-  - transmit
-  - vagrant
+homebrew_cask_apps: []
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
