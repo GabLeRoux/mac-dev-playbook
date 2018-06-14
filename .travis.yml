@@ -34,12 +34,10 @@ script:
 
   - cp tests/config.yml config.yml
   # Test the playbook.
-  - "travis_wait 30 ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml"
+  - "travis_wait 30 ansible-playbook --extra-vars main.yml"
   # Test the playbook's idempotence.
   - idempotence=$(mktemp)
-  - ls -la .
-  - pwd
-  - "ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml | tee -a ${idempotence}"
+  - "ansible-playbook --extra-vars main.yml | tee -a ${idempotence}"
   - >
     tail ${idempotence}
     | grep -q 'changed=0.*failed=0'
