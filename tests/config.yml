@@ -79,6 +79,7 @@ homebrew_installed_packages:
   - graphicsmagick
   - graphite2
   - graphviz
+  - gron
   - gti
   - gtk+
   - harfbuzz
